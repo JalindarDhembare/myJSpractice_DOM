@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>child nodes Document</title>
+</head>
+<body>
+    <div id ="demo">
+        <h1>Heading tag</h1>
+        <p>paragraph tag</p>
+        <a href="#">google</a>
+    </div>
+
+    <script>
+        let x=document.getElementById("demo");
+        let v1=x.childNodes;
+        console.log(v1);
+    </script>
+
+</body>
+</html>
+
+<!--Output: NodeList(7) [text, h1, text, p, text, a, text] -->

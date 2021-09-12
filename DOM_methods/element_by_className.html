@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element By class name</title>
+</head>
+<body>
+    <ul>
+        <li class="myclass">List 1</li>
+        <li>List 2</li>
+        <li class="myclass">List 3</li>
+    </ul>
+    <script>
+        let var1= document.getElementsByClassName("myclass");
+        //console.log(var1);  //    HTMLCollection(2)
+        for(let i=0;i<var1.length;i++)
+        {
+            console.log(var1[i].innerHTML);    //get a elements
+        }
+        for(let i=0;i<var1.length;i++)
+        {
+        var1[i].innerHTML="Hello";     //set a element
+        }
+    </script>
+</body>
+</html>

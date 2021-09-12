@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element By id</title>
+</head>
+<body>
+    <ul>
+        <li>List 1</li>
+        <li id="id01">List 2</li>
+        <li>List 3</li>
+    </ul>
+    <script>
+        let var1= document.getElementById("id01");
+        console.log(var1);  //select element by id
+        console.log(var1.innerHTML);    //get a element
+        var1.innerHTML="Hello";     //set a element
+    </script>
+</body>
+</html>

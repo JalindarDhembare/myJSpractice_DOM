@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element By tag name</title>
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <p>paragraph 1</p>
+    <h1>Heading 2</h1>
+    <p>paragraph 2</p>
+    <h1>Heading 3</h1>
+    <p>paragraph 3</p>
+
+    <script>
+        let var1=document.getElementsByTagName("h1");
+
+        for(let i=0;i<var1.length;i++)
+        {
+            console.log(var1[i].innerHTML);    //get a elements
+        }
+
+        for(let i=0;i<var1.length;i++)
+        {
+        var1[i].innerHTML="Hello";     //set a elements
+        }
+    </script>
+
+</body>
+</html>

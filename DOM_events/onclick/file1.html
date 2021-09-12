@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onclick Document</title>
+</head>
+<body>
+    <p id="demo" onclick="myFun()">click me a</p><br>
+    <p id="demo" onclick="myFun1()">click me b</p><br>
+    <p id="demo" onclick="myFun2()">click me c</p><br>
+
+<script>
+    function myFun()
+    {
+        let x=document.getElementById("demo");
+        x.innerHTML="You clicked me..!!";
+    }
+
+    function myFun1()
+    {
+        console.log("You clicked me..!!");
+    }
+
+    function myFun2()
+    {
+        alert("You clicked me..!!");
+    }
+</script>
+
+</body>
+</html>

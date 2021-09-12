@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create and append Document</title>
+</head>
+<body>
+    <div id="id01">
+        <p>this is paragraph</p>
+    </div>
+
+    <script>
+        let var1=document.getElementById("id01");
+
+        let node1=document.createElement("h1");         //creating a tage
+        node1.ClassName="myclass1"; //adding classname to node
+        node1.id="id02";    //adding id to node
+       
+        var1.append(node1);
+        
+        console.log(var1);
+    </script>
+
+</body>
+</html>

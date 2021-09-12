@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create and append Document</title>
+</head>
+<body>
+    <div id="id01">
+        <p>this is paragraph</p>
+    </div>
+
+    <script>
+        let var1=document.getElementById("id01");
+
+        let node1=document.createElement("h1");         //creating a tage
+        //let text=document.createTextNode("This is Heading");
+        node1.textContent="This is Heading tag";    //we can add text using textContent property also.
+
+        //node1.append(text);
+        document.body.append(node1);        //adding h1 tag to body
+
+        console.log(node1.textContent);     //using textContent we can read element also..
+        console.log(var1.textContent);
+    </script>
+
+</body>
+</html>
